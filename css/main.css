@@ -1,0 +1,133 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/sf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#conteiner {
+   margin: 10px 10%;
+  }
+
+/* header */
+
+header {
+  height: 200px;
+  margin-bottom: 10px;
+  /* debag */
+  background-color: yellow;
+}
+
+ /* titolo */
+
+.titolo {
+  background-image: url(../img/sfondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 7px solid white;
+  height: 85%;
+  color: white;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+/* soluzione poco fessiblie devi sistemarla */
+
+h2 {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%,-50%);
+  font-size: 15px;
+}
+
+ /* menu */
+
+nav {
+  background-color: rgb(72, 80, 82);
+  height: 15%;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+/* parte centrale */
+
+.riga::after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 10px;
+}
+
+.colonna1, .colonna3 {
+  width: 25%;
+  float:left;
+}
+
+.colonna1 {
+}
+
+.colonna2 {
+  width: 40%;
+  float: left;
+  margin: 0 5%;
+  /* debug */
+  height: 300px;
+}
+
+.riga  section {
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+/* footer */
+
+footer {
+  height: 150px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+footer #creatore {
+height: 10%;
+border-bottom: solid 1px black;
+text-align: center;
+font-size: 10px;
+}
+
+#social {
+  height: 90%;
+}
+
+.social::after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 10px;
+}
+
+#social div {
+  width: 33%;
+  height: 100%;
+  float: left;
+/* debug */
+border: black;
+}
