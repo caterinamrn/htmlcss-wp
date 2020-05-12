@@ -12,7 +12,7 @@ body{
 }
 
 #conteiner {
-   margin: 10px 10%;
+   margin: 10px 15%;
   }
 
 /* header */
@@ -46,10 +46,10 @@ h1 {
 
 h2 {
   position: absolute;
-  left: 50%;
   top: 65%;
-  transform: translate(-50%,-50%);
-  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
 }
 
  /* menu */
@@ -64,6 +64,12 @@ nav li {
   color: white;
   font-size: 15px;
   padding: 5px;
+  padding-bottom: 7px;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 59);
 }
 
 /* parte centrale */
@@ -95,9 +101,28 @@ nav li {
   background-color: white;
   margin-bottom: 10px;
   border-radius: 5px;
+  padding: 3%;
 }
 
+/* contenuto prima colonna */
 
+.colonna1 a{
+  color: green;
+  text-decoration: none;
+}
+
+.riga p,.correlati {
+  font-size: 15px;
+  margin: 5px;
+}
+.riga h3,h4 {
+  margin:7px;
+  font-size: 18px;
+}
+.riga h3 {
+  font-size:20px;
+  text-shadow: 2px 2px grey;
+}
 /* footer */
 
 footer {
@@ -115,6 +140,7 @@ font-size: 10px;
 
 #social {
   height: 90%;
+  z-index: 60;
 }
 
 .social::after {
@@ -128,6 +154,21 @@ font-size: 10px;
   width: 33%;
   height: 100%;
   float: left;
-/* debug */
-border: black;
+}
+
+#insta, #fb, #git {
+  position: relative;
+}
+
+footer img{
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#social img:hover {
+  cursor: pointer;
+  width: 30%;
 }
