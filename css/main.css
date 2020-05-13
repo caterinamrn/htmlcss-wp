@@ -41,12 +41,14 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  border: 2px solid white;
+  padding: 5px;
 }
 /* soluzione poco fessiblie devi sistemarla */
 
 h2 {
   position: absolute;
-  top: 65%;
+  top: 70%;
   width: 100%;
   text-align: center;
   font-size: 16px;
@@ -90,15 +92,11 @@ nav li:hover {
   float:left;
 }
 
-.colonna1 {
-}
 
 .colonna2 {
   width: 40%;
   float: left;
   margin: 0 5%;
-  /* debug */
-  height: 300px;
 }
 
 .riga  section {
@@ -113,21 +111,16 @@ nav li:hover {
 .colonna1 a{
   color: green;
   text-decoration: none;
+  display: block;
   padding: 3px;
 }
-.colonna1 li{
-  list-style-type: none;
-}
 
-.colonna1 a {
-width: inherit; 
-}
 /* regole paragrafi */
 .riga p, a {
   font-size: 15px;
   margin: 5px;
 }
-.riga h3,h4 {
+.riga h3,.riga h4 {
   margin:7px;
   font-size: 18px;
 }
